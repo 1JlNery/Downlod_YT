@@ -1,4 +1,5 @@
 import tkinter
+from PIL import Image, ImageTk
 from pytube import YouTube
 import customtkinter
 
@@ -39,6 +40,11 @@ entry_style = {"width": 350, "height": 40, "font": ("Arial", 12)}
 button_style = {"font": ("Arial", 12, "bold"), "width": 150, "height": 30}
 label_style = {"font": ("Arial", 14)}
 
+download_icon = Image.open("icon/download_icon.png")
+download_icon = download_icon.resize((20, 20))
+download_icon = ImageTk.PhotoImage(download_icon)
+
+
 #download video interface
 title = customtkinter.CTkLabel(app, text="Video Link", **title_style) 
 title.pack(padx = 10, pady = 10)
@@ -50,8 +56,9 @@ link.pack()
 finishLabel = customtkinter.CTkLabel(app, text="", **label_style)
 finishLabel.pack()
 
-download = customtkinter.CTkButton(app, text="Download", command=startdownload, **button_style)
+download = customtkinter.CTkButton(app, text="Download", image=download_icon, command=startdownload, **button_style)
 download.pack(padx=20, pady=20)
+
 
 #download audio interface
 title = customtkinter.CTkLabel(app, text="Audio Link", **title_style)
@@ -64,7 +71,7 @@ link.pack()
 finishLabel_2 = customtkinter.CTkLabel(app, text="", **label_style)
 finishLabel_2.pack()
 
-download = customtkinter.CTkButton(app, text="Download", command=startdownloadmp4, **button_style)
+download = customtkinter.CTkButton(app, text="Download", image=download_icon, command=startdownloadmp4, **button_style)
 download.pack(padx=20, pady=20)
 
 app.mainloop()
