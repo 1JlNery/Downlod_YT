@@ -14,6 +14,7 @@ Estava precisando de uma forma boa de baixar videos e músicas para deixar salvo
 - Python
 - pytube
 - customtkinter
+- pillow
 
 ## Como usar
 
