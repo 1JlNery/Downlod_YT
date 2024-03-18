@@ -1,6 +1,6 @@
 # YouTube Downloader
 
-Estava precisando de uma forma boa de baixar videos e músicas para deixar salvo so que não estava conseguindo achar um que me agradace até que decidir fazer um programa para fazer isso depois de pesquisar acabei descobrindo ess projeto envolvendo o pytube e decidi criar meu proprio downloader
+Estava precisando de uma forma boa de baixar videos e músicas para deixar salvo so que não estava conseguindo achar um que me agradace até que decidir fazer um programa para fazer isso depois de pesquisar acabei descobrindo esse projeto envolvendo o pytube e decidi criar meu proprio downloader
 
 ## Funcionalidades
 
