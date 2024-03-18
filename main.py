@@ -6,9 +6,7 @@ import customtkinter
 def startdownload():
     try:
         ytLink = url_var.get()
-        ytObject = YouTube(
-            ytLink
-        )
+        ytObject = YouTube(ytLink)
         video = ytObject.streams.get_highest_resolution()
         video.download()
         finishLabel.configure(text="Downloaded", text_color="green")
