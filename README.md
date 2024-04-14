@@ -5,15 +5,15 @@ I needed a good way to download videos and music to keep them saved, but I could
 Download YouTube videos in the best available resolution.
 Download only the audio of the videos in MP4 format.
 ## Tools
-VsCode
-Git/GitHub
-Python
-pytube
-customtkinter
-pillow
+- VsCode
+- Git/GitHub
+- Python
+- pytube
+- customtkinter
+- pillow
 ## How to Use
-Clone this repository to your computer.
-Make sure you have Python installed.
-Run the application with the command python main.py.
-Paste the YouTube video link into the appropriate text box.
-Click the "Download" button to download the video or audio.
+- Clone this repository to your computer.
+- Make sure you have Python installed.
+- Run the application with the command python main.py.
+- Paste the YouTube video link into the appropriate text box.
+- Click the "Download" button to download the video or audio.
