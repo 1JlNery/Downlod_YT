@@ -1,4 +1,5 @@
 import tkinter
+from tkinter import filedialog
 from PIL import Image, ImageTk
 from pytube import YouTube
 import customtkinter
@@ -6,11 +7,11 @@ import customtkinter
 def startdownload():
     try:
         ytLink = url_var.get()
-        ytObject = YouTube(
-            ytLink
-        )
+        ytObject = YouTube(ytLink)
         video = ytObject.streams.get_highest_resolution()
-        video.download()
+        save_path = filedialog.askdirectory()  
+        if save_path:
+            video.download(save_path)
         finishLabel.configure(text="Downloaded", text_color="green")
     except Exception as e:
         print("Error", e)
@@ -21,7 +22,9 @@ def startdownloadmp4():
         ytLink = url_var_mp4.get()
         ytObject = YouTube(ytLink)
         audio = ytObject.streams.filter(only_audio=True).first()
-        audio.download()
+        save_path = filedialog.askdirectory()  
+        if save_path:  
+            audio.download(save_path)
         finishLabel_2.configure(text="Downloaded", text_color="green")
     except Exception as e:
         print("Error", e)
