@@ -16,4 +16,5 @@ Download only the audio of the videos in MP4 format.
 - Make sure you have Python installed.
 - Run the application with the command python main.py.
 - Paste the YouTube video link into the appropriate text box.
+- Choose where you want to save the video
 - Click the "Download" button to download the video or audio.
